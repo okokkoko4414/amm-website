@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!-- AMM Pricing Page — Phase 0 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — AMM | GEO Marketing from $300/month</title>
+  <meta name="description" content="Transparent GEO marketing pricing. Free L1 audit. L2 Standard $300/mo. L3 Managed $750/mo. No hidden fees, cancel anytime." />
+  <link rel="canonical" href="https://okokkoko4414.github.io/amm-website/pricing.html" />
+
+  <meta property="og:title" content="GEO Marketing Pricing — AMM" />
+  <meta property="og:description" content="Start with a free GEO audit. Scale to managed operations. From $300/month per website." />
+  <meta property="og:url" content="https://okokkoko4414.github.io/amm-website/pricing.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Schema.org: OfferCatalog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "GEO Marketing Service",
+    "brand": {"@type": "Brand", "name": "AMM"},
+    "offers": [
+      {"@type": "Offer", "name": "L1 GEO Audit", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock"},
+      {"@type": "Offer", "name": "L2 Standard GEO", "price": "300", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "billingDuration": "P1M", "unitText": "month"}},
+      {"@type": "Offer", "name": "L3 Managed GEO", "price": "750", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "billingDuration": "P1M", "unitText": "month"}}
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #F8F9FA;
+      color: #1A1A2E;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    .nav {
+      background: #0A1F44;
+      padding: 16px 0;
+    }
+    .nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav .logo { color: #fff; font-size: 22px; font-weight: 700; text-decoration: none; }
+    .nav .logo span { color: #00D4AA; }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a {
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: #fff; }
+
+    .page-hero {
+      background: linear-gradient(135deg, #0A1F44 0%, #1A1A2E 100%);
+      color: #fff;
+      padding: 60px 0 50px;
+      text-align: center;
+    }
+    .page-hero h1 { font-size: 38px; font-weight: 700; margin-bottom: 12px; }
+    .page-hero h1 span { color: #00D4AA; }
+    .page-hero p { font-size: 17px; color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto; }
+
+    .signal-divider {
+      display: flex; justify-content: center; gap: 8px; padding: 16px 0;
+    }
+    .signal-divider span {
+      display: block; width: 4px; height: 24px; background: #00D4AA; border-radius: 2px; opacity: 0.3;
+    }
+    .signal-divider span:nth-child(1) { height: 14px; }
+    .signal-divider span:nth-child(2) { height: 20px; }
+    .signal-divider span:nth-child(3) { height: 28px; opacity: 0.7; }
+    .signal-divider span:nth-child(4) { height: 20px; }
+    .signal-divider span:nth-child(5) { height: 14px; }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 60px 0;
+    }
+    .pricing-card {
+      background: #fff;
+      border: 1px solid #E8ECF0;
+      border-radius: 12px;
+      padding: 36px 28px;
+      text-align: center;
+      transition: box-shadow 0.2s, transform 0.15s;
+    }
+    .pricing-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.06); transform: translateY(-2px); }
+    .pricing-card.featured { border: 2px solid #00D4AA; position: relative; }
+    .pricing-card.featured::before {
+      content: 'Best Value';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #00D4AA;
+      color: #0A1F44;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 4px 16px;
+      border-radius: 12px;
+    }
+    .tier-badge {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    .tier-free { background: #F0F0FF; color: #5A5AE0; }
+    .tier-standard { background: #E6F7F0; color: #1A7D4E; }
+    .tier-managed { background: #FDE8E8; color: #C53030; }
+    .pricing-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+    .price-amount {
+      font-size: 44px;
+      font-weight: 700;
+      color: #0A1F44;
+    }
+    .price-amount small {
+      font-size: 18px;
+      font-weight: 400;
+      color: #6C757D;
+    }
+    .price-desc {
+      font-size: 13px;
+      color: #6C757D;
+      margin-bottom: 24px;
+    }
+    .pricing-card ul {
+      list-style: none;
+      text-align: left;
+      margin: 24px 0;
+    }
+    .pricing-card ul li {
+      padding: 8px 0;
+      font-size: 14px;
+      color: #4A5568;
+      border-bottom: 1px solid #F0F0F0;
+    }
+    .pricing-card ul li:last-child { border-bottom: none; }
+    .pricing-card ul li::before {
+      content: '✓';
+      color: #00D4AA;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      background: #00D4AA;
+      color: #0A1F44;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #00bf99; }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #E8ECF0;
+      color: #4A5568;
+    }
+    .btn-outline:hover { border-color: #00D4AA; color: #0A1F44; }
+
+    .guarantee {
+      text-align: center;
+      padding: 40px 0;
+      background: #fff;
+    }
+    .guarantee h3 { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+    .guarantee p { font-size: 14px; color: #6C757D; max-width: 600px; margin: 0 auto; }
+
+    .faq-mini {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+    .faq-mini h2 { text-align: center; margin-bottom: 28px; }
+    .faq-item {
+      background: #fff;
+      border: 1px solid #E8ECF0;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .faq-item h4 { font-size: 15px; font-weight: 600; color: #0A1F44; margin-bottom: 4px; }
+    .faq-item p { font-size: 13px; color: #6C757D; }
+
+    footer {
+      background: #0A1F44;
+      color: rgba(255,255,255,0.6);
+      padding: 40px 0;
+      font-size: 14px;
+    }
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    footer a { color: #00D4AA; text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .pricing-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .page-hero h1 { font-size: 28px; }
+      footer .container { flex-direction: column; gap: 8px; text-align: center; }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="./" class="logo">A<span>M</span>M</a>
+    <div class="nav-links">
+      <a href="./">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Simple, <span>Transparent</span> Pricing</h1>
+    <p>No hidden fees. No long-term lock-in. Pick the tier that matches your GEO maturity.</p>
+  </div>
+</section>
+
+<div class="signal-divider"><span></span><span></span><span></span><span></span><span></span></div>
+
+<!-- Pricing Cards -->
+<section>
+  <div class="container pricing-grid">
+
+    <div class="pricing-card">
+      <div class="tier-badge tier-free">L1 · Free</div>
+      <h3>GEO Audit</h3>
+      <div class="price-amount">$0</div>
+      <div class="price-desc">One-time · No credit card</div>
+      <ul>
+        <li>6-engine visibility check</li>
+        <li>Schema completeness score</li>
+        <li>Keyword gap analysis</li>
+        <li>PDF report with 5 fixes</li>
+        <li>No commitment needed</li>
+      </ul>
+      <a href="contact.html" class="btn btn-outline">Request Free Audit</a>
+    </div>
+
+    <div class="pricing-card featured">
+      <div class="tier-badge tier-standard">L2 · Standard</div>
+      <h3>GEO Optimization</h3>
+      <div class="price-amount">$300 <small>/mo</small></div>
+      <div class="price-desc">Per website · Month-to-month</div>
+      <ul>
+        <li>4 GEO content pieces/month</li>
+        <li>Schema & structured data</li>
+        <li>Weekly rank tracking</li>
+        <li>Monthly performance report</li>
+        <li>48h competitor SLA</li>
+        <li>Cancel anytime</li>
+      </ul>
+      <a href="contact.html" class="btn">Get Started</a>
+    </div>
+
+    <div class="pricing-card">
+      <div class="tier-badge tier-managed">L3 · Managed</div>
+      <h3>Full GEO Operations</h3>
+      <div class="price-amount">$750 <small>/mo</small></div>
+      <div class="price-desc">Per website · 3-month commitment</div>
+      <ul>
+        <li>12 GEO content pieces/month</li>
+        <li>Multi-language (up to 3)</li>
+        <li>Competitor intelligence</li>
+        <li>Dedicated agent pipeline</li>
+        <li>Weekly strategy briefs</li>
+        <li>24h response SLA</li>
+      </ul>
+      <a href="contact.html" class="btn btn-outline">Book a Call</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Guarantee -->
+<section class="guarantee">
+  <div class="container">
+    <h3>🔬 Results-Backed. Not Guesswork.</h3>
+    <p>Every GEO recommendation is backed by real rank data across 6 AI engines. We don't bill for theory — we bill for measurable visibility improvements. Our own website is Client #0, proving our methodology before we sell it.</p>
+  </div>
+</section>
+
+<!-- Pricing FAQ -->
+<section>
+  <div class="container faq-mini">
+    <h2 class="section-title">Pricing FAQ</h2>
+    <div class="faq-item">
+      <h4>What forms of payment do you accept?</h4>
+      <p>We accept all major credit cards and wire transfers for annual commitments. Invoiced billing is available for L3 Managed clients.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Can I start with L1 Audit and upgrade later?</h4>
+      <p>Yes. Start with a free audit. If you like what you see, upgrade to L2 or L3. We'll apply the audit findings toward your first optimization cycle.</p>
+    </div>
+    <div class="faq-item">
+      <h4>What if I have multiple websites?</h4>
+      <p>Each website is priced separately. We offer a 15% discount for 3+ sites on L2 or L3. Contact us for a custom quote.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Is there a setup fee?</h4>
+      <p>No. L2 and L3 include onboarding at no extra cost. Your first week includes a full baseline audit before any optimization begins.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <span>&copy; 2026 AMM — Advanced Model Marketing. All rights reserved.</span>
+    <span>Built by AI, for AI. <a href="mailto:hello@amm.company">hello@amm.company</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

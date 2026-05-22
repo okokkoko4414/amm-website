@@ -8,6 +8,12 @@
   <meta name="description" content="AMM is an AI-native GEO agency that helps B2B SaaS and tech companies dominate AI search engine visibility across ChatGPT, Gemini, Perplexity, Claude, Grok, and Bing Copilot." />
   <link rel="canonical" href="https://okokkoko4414.github.io/amm-website/" />
   
+  <!-- Open Graph -->
+  <meta property="og:title" content="AMM — AI-Native GEO Marketing Agency">
+  <meta property="og:description" content="Rank higher on every AI engine. We engineer your brand into ChatGPT, Gemini, Perplexity, Claude, Grok, and Bing Copilot answers.">
+  <meta property="og:url" content="https://okokkoko4414.github.io/amm-website/">
+  <meta property="og:type" content="website">
+
   <!-- Schema.org / GEO structured data -->
   <script type="application/ld+json">
   {
@@ -25,23 +31,78 @@
   }
   </script>
 
-  <!-- Google Analytics / Site tracking (placeholder for deployment) -->
+  <!-- Site Navigation Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SiteNavigationElement",
+    "name": ["Home", "About", "Services", "Pricing", "FAQ", "Contact"],
+    "url": [
+      "https://okokkoko4414.github.io/amm-website/",
+      "https://okokkoko4414.github.io/amm-website/about.html",
+      "https://okokkoko4414.github.io/amm-website/service-groups.html",
+      "https://okokkoko4414.github.io/amm-website/pricing.html",
+      "https://okokkoko4414.github.io/amm-website/faq.html",
+      "https://okokkoko4414.github.io/amm-website/contact.html"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0b;
+      --surface: #141416;
+      --surface-hover: #1c1c20;
+      --border: #2a2a2e;
+      --text: #e8e8ed;
+      --text-muted: #8a8a92;
+      --accent: #6c5ce7;
+      --accent-glow: rgba(108, 92, 231, 0.15);
+      --green: #00d68f;
+      --radius: 12px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
+      background: var(--bg);
+      color: var(--text);
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #F8F9FA;
-      color: #1A1A2E;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
     .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
+    /* Nav */
+    nav {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; color: var(--text); }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .nav-links a.active { color: var(--accent); }
+
     /* Hero */
     .hero {
-      background: linear-gradient(135deg, #0A1F44 0%, #1A1A2E 100%);
+      background: linear-gradient(135deg, #0c0c1e 0%, #1a1a2e 100%);
       color: #fff;
       padding: 100px 0 80px;
       position: relative;
@@ -54,20 +115,21 @@
       right: -20%;
       width: 600px;
       height: 600px;
-      background: radial-gradient(circle, rgba(0,212,170,0.08) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(108,92,231,0.10) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero h1 {
       font-size: 48px;
-      font-weight: 700;
+      font-weight: 800;
       line-height: 1.15;
       margin-bottom: 20px;
       max-width: 800px;
+      letter-spacing: -0.03em;
     }
-    .hero h1 span { color: #00D4AA; }
+    .hero h1 span { background: linear-gradient(135deg, var(--accent), #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .hero p {
       font-size: 20px;
-      color: rgba(255,255,255,0.7);
+      color: rgba(255,255,255,0.65);
       max-width: 640px;
       margin-bottom: 36px;
     }
@@ -78,19 +140,19 @@
       margin-bottom: 40px;
     }
     .hero .engine-badge {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
       border-radius: 6px;
       padding: 6px 14px;
       font-size: 13px;
-      color: rgba(255,255,255,0.7);
+      color: rgba(255,255,255,0.6);
       letter-spacing: 0.3px;
     }
 
     .btn {
       display: inline-block;
-      background: #00D4AA;
-      color: #0A1F44;
+      background: var(--accent);
+      color: #fff;
       font-weight: 600;
       font-size: 16px;
       padding: 14px 32px;
@@ -98,14 +160,14 @@
       text-decoration: none;
       transition: background 0.2s, transform 0.15s;
     }
-    .btn:hover { background: #00bf99; transform: translateY(-1px); }
+    .btn:hover { background: #7c6ff0; transform: translateY(-1px); }
     .btn-outline {
       background: transparent;
-      border: 1.5px solid rgba(255,255,255,0.25);
+      border: 1.5px solid rgba(255,255,255,0.2);
       color: #fff;
       margin-left: 12px;
     }
-    .btn-outline:hover { border-color: #00D4AA; color: #00D4AA; }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
     /* Signal wave divider */
     .signal-divider {
@@ -118,7 +180,7 @@
       display: block;
       width: 4px;
       height: 24px;
-      background: #00D4AA;
+      background: var(--accent);
       border-radius: 2px;
       opacity: 0.3;
     }
@@ -133,12 +195,12 @@
     .section-title {
       font-size: 32px;
       font-weight: 700;
-      color: #0A1F44;
+      color: var(--text);
       margin-bottom: 12px;
     }
     .section-subtitle {
       font-size: 18px;
-      color: #6C757D;
+      color: var(--text-muted);
       margin-bottom: 48px;
       max-width: 600px;
     }
@@ -151,16 +213,16 @@
       margin-bottom: 40px;
     }
     .ps-card {
-      background: #fff;
-      border: 1px solid #E8ECF0;
-      border-radius: 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       padding: 32px;
     }
     .ps-card h3 {
       font-size: 20px;
       font-weight: 600;
       margin-bottom: 12px;
-      color: #0A1F44;
+      color: var(--text);
     }
     .ps-card .label {
       display: inline-block;
@@ -172,13 +234,13 @@
       border-radius: 4px;
       margin-bottom: 16px;
     }
-    .label-problem { background: #FDE8E8; color: #C53030; }
-    .label-solution { background: #E6F7F0; color: #1A7D4E; }
+    .label-problem { background: rgba(239,68,68,0.15); color: #fca5a5; }
+    .label-solution { background: rgba(0,214,143,0.15); color: #6ee7b7; }
     .ps-card ul { list-style: none; }
     .ps-card ul li {
       padding: 6px 0;
       font-size: 15px;
-      color: #4A5568;
+      color: var(--text-muted);
     }
     .ps-card ul li::before {
       content: '';
@@ -189,8 +251,8 @@
       margin-right: 10px;
       vertical-align: middle;
     }
-    .ps-card:nth-child(1) ul li::before { background: #FC8181; }
-    .ps-card:nth-child(2) ul li::before { background: #00D4AA; }
+    .ps-card:nth-child(1) ul li::before { background: #f87171; }
+    .ps-card:nth-child(2) ul li::before { background: var(--green); }
 
     /* How it works */
     .steps {
@@ -199,9 +261,9 @@
       gap: 24px;
     }
     .step {
-      background: #fff;
-      border: 1px solid #E8ECF0;
-      border-radius: 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       padding: 28px;
       text-align: center;
     }
@@ -211,15 +273,15 @@
       justify-content: center;
       width: 40px;
       height: 40px;
-      background: linear-gradient(135deg, #00D4AA, #7C65F5);
+      background: linear-gradient(135deg, var(--accent), #a78bfa);
       color: #fff;
       border-radius: 50%;
       font-weight: 700;
       font-size: 16px;
       margin-bottom: 16px;
     }
-    .step h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #0A1F44; }
-    .step p { font-size: 14px; color: #6C757D; }
+    .step h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+    .step p { font-size: 14px; color: var(--text-muted); }
 
     /* Metrics */
     .metrics {
@@ -228,27 +290,27 @@
       gap: 24px;
     }
     .metric {
-      background: #fff;
-      border: 1px solid #E8ECF0;
-      border-radius: 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       padding: 28px;
       text-align: center;
     }
     .metric-value {
       font-size: 36px;
       font-weight: 700;
-      color: #0A1F44;
+      color: var(--text);
       margin-bottom: 4px;
     }
-    .metric-value .accent { color: #00D4AA; }
-    .metric-label { font-size: 14px; color: #6C757D; }
+    .metric-value .accent { background: linear-gradient(135deg, var(--accent), #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .metric-label { font-size: 14px; color: var(--text-muted); }
 
     /* Pricing */
     .pricing-card {
       max-width: 400px;
-      background: #fff;
-      border: 2px solid #00D4AA;
-      border-radius: 12px;
+      background: var(--surface);
+      border: 1px solid var(--accent);
+      border-radius: var(--radius);
       padding: 36px;
       text-align: center;
       margin: 0 auto;
@@ -256,12 +318,12 @@
     .pricing-card .price {
       font-size: 48px;
       font-weight: 700;
-      color: #0A1F44;
+      color: var(--text);
     }
     .pricing-card .price small {
       font-size: 20px;
       font-weight: 400;
-      color: #6C757D;
+      color: var(--text-muted);
     }
     .pricing-card ul {
       list-style: none;
@@ -271,19 +333,40 @@
     .pricing-card ul li {
       padding: 8px 0;
       font-size: 15px;
-      color: #4A5568;
+      color: var(--text-muted);
     }
     .pricing-card ul li::before {
       content: '✓';
-      color: #00D4AA;
+      color: var(--green);
       font-weight: 700;
       margin-right: 10px;
     }
 
+    /* Page CTA */
+    .page-links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .page-link-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .page-link-card:hover { border-color: var(--accent); background: var(--surface-hover); }
+    .page-link-card .icon { font-size: 1.5rem; margin-bottom: 8px; }
+    .page-link-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+    .page-link-card p { font-size: 0.85rem; color: var(--text-muted); }
+
     /* Footer */
     footer {
-      background: #0A1F44;
-      color: rgba(255,255,255,0.6);
+      border-top: 1px solid var(--border);
       padding: 40px 0;
       font-size: 14px;
     }
@@ -292,7 +375,8 @@
       justify-content: space-between;
       align-items: center;
     }
-    footer a { color: #00D4AA; text-decoration: none; }
+    footer p { color: var(--text-muted); }
+    footer a { color: var(--accent); text-decoration: none; }
 
     @media (max-width: 768px) {
       .hero h1 { font-size: 32px; }
@@ -301,141 +385,188 @@
       .steps { grid-template-columns: 1fr; }
       .btn-outline { margin-left: 0; margin-top: 12px; display: block; text-align: center; }
       .section-title { font-size: 26px; }
+      .page-links { grid-template-columns: 1fr; }
+      .nav-links { gap: 16px; }
+      .nav-links a { font-size: 0.8rem; }
     }
   </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<!-- Hero -->
-<section class="hero">
-  <div class="container">
-    <h1>Your Brand <span>Ranked Higher</span> on Every AI Engine.</h1>
-    <p>AMM is the AI-native GEO agency that engineers your brand into AI answers — measurable across ChatGPT, Gemini, Perplexity, Claude, Grok, and Bing Copilot.</p>
-    <div class="engines">
-      <span class="engine-badge">ChatGPT</span>
-      <span class="engine-badge">Gemini</span>
-      <span class="engine-badge">Perplexity</span>
-      <span class="engine-badge">Claude</span>
-      <span class="engine-badge">Grok</span>
-      <span class="engine-badge">Bing Copilot</span>
+  <!-- Nav -->
+  <nav>
+    <div class="container">
+      <div class="logo">A<span>M</span>M</div>
+      <div class="nav-links">
+        <a href="./" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="service-groups.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-    <a href="#pricing" class="btn">Get Started at $300/mo</a>
-    <a href="#how-it-works" class="btn btn-outline">How It Works</a>
-  </div>
-</section>
+  </nav>
 
-<div class="signal-divider"><span></span><span></span><span></span><span></span><span></span></div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Your Brand <span>Ranked Higher</span> on Every AI Engine.</h1>
+      <p>AMM is the AI-native GEO agency that engineers your brand into AI answers — measurable across ChatGPT, Gemini, Perplexity, Claude, Grok, and Bing Copilot.</p>
+      <div class="engines">
+        <span class="engine-badge">ChatGPT</span>
+        <span class="engine-badge">Gemini</span>
+        <span class="engine-badge">Perplexity</span>
+        <span class="engine-badge">Claude</span>
+        <span class="engine-badge">Grok</span>
+        <span class="engine-badge">Bing Copilot</span>
+      </div>
+      <a href="service-groups.html" class="btn">Get Started at $300/mo</a>
+      <a href="#how-it-works" class="btn btn-outline">How It Works</a>
+      <a href="contact.html" class="btn btn-outline">Free Audit</a>
+    </div>
+  </section>
 
-<!-- Problem / Solution -->
-<section class="section" id="problem">
-  <div class="container">
-    <div class="problem-solution">
-      <div class="ps-card">
-        <div class="label label-problem">The Problem</div>
-        <h3>AI Search Is Eating Your Traffic</h3>
+  <div class="signal-divider"><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- Problem / Solution -->
+  <section class="section" id="problem">
+    <div class="container">
+      <div class="problem-solution">
+        <div class="ps-card">
+          <div class="label label-problem">The Problem</div>
+          <h3>AI Search Is Eating Your Traffic</h3>
+          <ul>
+            <li>ChatGPT and Gemini now answer queries without citing any source</li>
+            <li>Traditional SEO doesn't work on AI engines — they optimize for clicks, not citations</li>
+            <li>Your competitors are already getting cited; you're invisible</li>
+            <li>Generic AI answers replace your brand before the user ever sees your site</li>
+          </ul>
+        </div>
+        <div class="ps-card">
+          <div class="label label-solution">The Solution</div>
+          <h3>GEO That Engineers AI Answers</h3>
+          <ul>
+            <li>We optimize your content specifically for AI model training data and retrieval</li>
+            <li>6-engine rank tracking — you see exactly where you stand on every AI search engine</li>
+            <li>AI-native production pipeline — content crafted for AI consumption, not just human reading</li>
+            <li>Weekly adjustments based on rank data, not guesswork</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section" id="how-it-works" style="background:var(--surface);">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">From zero to cited in 3 steps. No long contracts. No hidden fees.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Audit & Baseline</h3>
+          <p>We measure your current AI search visibility across all 6 major engines. You get a clear baseline report.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Optimize & Publish</h3>
+          <p>Our AI-native pipeline produces GEO-optimized content for your site — structured for both AI retrieval and human readers.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Track & Iterate</h3>
+          <p>Weekly rank tracking per engine, per keyword. If a competitor overtakes you, we adjust within 48 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" style="text-align:center;">By the Numbers</h2>
+      <p class="section-subtitle" style="text-align:center; margin:0 auto 48px;">We practice what we preach. This is our own GEO performance.</p>
+      <div class="metrics">
+        <div class="metric">
+          <div class="metric-value"><span class="accent">6</span></div>
+          <div class="metric-label">AI Engines Tracked</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value"><span class="accent">340</span>%</div>
+          <div class="metric-label">Avg Visibility Increase</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value"><span class="accent">48</span>h</div>
+          <div class="metric-label">Response Time</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value"><span class="accent">99</span>%</div>
+          <div class="metric-label">Profit Margin (we run lean)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links to Pages -->
+  <section class="section" style="background:var(--surface);">
+    <div class="container">
+      <h2 class="section-title" style="text-align:center;">Explore Our Services</h2>
+      <p class="section-subtitle" style="text-align:center; margin:0 auto 48px;">Everything you need to know about GEO — in one place.</p>
+
+      <div class="page-links">
+        <a href="service-groups.html" class="page-link-card">
+          <div class="icon">📋</div>
+          <h3>Our Services</h3>
+          <p>Detailed breakdown of Starter, Growth, and Enterprise GEO plans</p>
+        </a>
+        <a href="pricing.html" class="page-link-card">
+          <div class="icon">💰</div>
+          <h3>Transparent Pricing</h3>
+          <p>$300/mo Starter · $750/mo Growth · $2,000/mo Enterprise</p>
+        </a>
+        <a href="faq.html" class="page-link-card">
+          <div class="icon">❓</div>
+          <h3>FAQ</h3>
+          <p>15+ questions about GEO, AI search, and working with AMM</p>
+        </a>
+        <a href="contact.html" class="page-link-card">
+          <div class="icon">✉️</div>
+          <h3>Free GEO Audit</h3>
+          <p>Get your AI search visibility report in 24 hours — no strings attached</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <h2 class="section-title" style="text-align:center;">Simple Pricing</h2>
+      <p class="section-subtitle" style="text-align:center; margin:0 auto 48px;">One plan. One price. Results you can measure.</p>
+      <div class="pricing-card">
+        <div class="price">$300 <small>/mo</small></div>
+        <p style="color:var(--text-muted);font-size:14px;">per website</p>
         <ul>
-          <li>ChatGPT and Gemini now answer queries without citing any source</li>
-          <li>Traditional SEO doesn't work on AI engines — they optimize for clicks, not citations</li>
-          <li>Your competitors are already getting cited; you're invisible</li>
-          <li>Generic AI answers replace your brand before the user ever sees your site</li>
+          <li>6-engine rank baseline & weekly tracking</li>
+          <li>4 GEO-optimized content pieces per month</li>
+          <li>Schema & structured data implementation</li>
+          <li>48-hour competitor response SLA</li>
+          <li>Monthly performance report</li>
+          <li>No long-term contract — cancel anytime</li>
         </ul>
-      </div>
-      <div class="ps-card">
-        <div class="label label-solution">The Solution</div>
-        <h3>GEO That Engineers AI Answers</h3>
-        <ul>
-          <li>We optimize your content specifically for AI model training data and retrieval</li>
-          <li>6-engine rank tracking — you see exactly where you stand on every AI search engine</li>
-          <li>AI-native production pipeline — content crafted for AI consumption, not just human reading</li>
-          <li>Weekly adjustments based on rank data, not guesswork</li>
-        </ul>
+        <a href="pricing.html" class="btn" style="width:100%;text-align:center;">See All Plans</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- How It Works -->
-<section class="section" id="how-it-works" style="background:#fff;">
-  <div class="container">
-    <h2 class="section-title">How It Works</h2>
-    <p class="section-subtitle">From zero to cited in 3 steps. No long contracts. No hidden fees.</p>
-    <div class="steps">
-      <div class="step">
-        <div class="step-number">1</div>
-        <h3>Audit & Baseline</h3>
-        <p>We measure your current AI search visibility across all 6 major engines. You get a clear baseline report.</p>
-      </div>
-      <div class="step">
-        <div class="step-number">2</div>
-        <h3>Optimize & Publish</h3>
-        <p>Our AI-native pipeline produces GEO-optimized content for your site — structured for both AI retrieval and human readers.</p>
-      </div>
-      <div class="step">
-        <div class="step-number">3</div>
-        <h3>Track & Iterate</h3>
-        <p>Weekly rank tracking per engine, per keyword. If a competitor overtakes you, we adjust within 48 hours.</p>
-      </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 AMM — Advanced Model Marketing. All rights reserved.</p>
+      <p>Built by AI, for AI. <a href="contact.html">hello@amm.company</a></p>
     </div>
-  </div>
-</section>
-
-<!-- Metrics -->
-<section class="section">
-  <div class="container">
-    <h2 class="section-title" style="text-align:center;">By the Numbers</h2>
-    <p class="section-subtitle" style="text-align:center; margin:0 auto 48px;">We practice what we preach. This is our own GEO performance.</p>
-    <div class="metrics">
-      <div class="metric">
-        <div class="metric-value"><span class="accent">6</span></div>
-        <div class="metric-label">AI Engines Tracked</div>
-      </div>
-      <div class="metric">
-        <div class="metric-value"><span class="accent">340</span>%</div>
-        <div class="metric-label">Avg Visibility Increase</div>
-      </div>
-      <div class="metric">
-        <div class="metric-value"><span class="accent">48</span>h</div>
-        <div class="metric-label">Response Time</div>
-      </div>
-      <div class="metric">
-        <div class="metric-value"><span class="accent">99</span>%</div>
-        <div class="metric-label">Profit Margin (we run lean)</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Pricing -->
-<section class="section" id="pricing" style="background:#fff;">
-  <div class="container">
-    <h2 class="section-title" style="text-align:center;">Simple Pricing</h2>
-    <p class="section-subtitle" style="text-align:center; margin:0 auto 48px;">One plan. One price. Results you can measure.</p>
-    <div class="pricing-card">
-      <div class="price">$300 <small>/mo</small></div>
-      <p style="color:#6C757D;font-size:14px;">per website</p>
-      <ul>
-        <li>6-engine rank baseline & weekly tracking</li>
-        <li>4 GEO-optimized content pieces per month</li>
-        <li>Schema & structured data implementation</li>
-        <li>48-hour competitor response SLA</li>
-        <li>Monthly performance report</li>
-        <li>No long-term contract — cancel anytime</li>
-      </ul>
-      <a href="#" class="btn" style="width:100%;text-align:center;">Get Started</a>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <span>&copy; 2026 AMM — Advanced Model Marketing. All rights reserved.</span>
-    <span>Built by AI, for AI. <a href="mailto:hello@okokkoko4414.github.io">hello@amm.company</a></span>
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>
