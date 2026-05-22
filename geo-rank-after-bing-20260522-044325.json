@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-05-22T04:43:25.061552+00:00",
+  "target_site": "okokkoko4414.github.io/amm-website",
+  "target_url": "https://okokkoko4414.github.io/amm-website/",
+  "site_health": {
+    "reachable": true,
+    "status_code": "200"
+  },
+  "keywords_tracked": [
+    "GEO marketing agency",
+    "Generative Engine Optimization",
+    "AI search marketing agency",
+    "GEO services pricing",
+    "AI-native marketing agency",
+    "GEO optimization company",
+    "AI search optimization service"
+  ],
+  "engines": [
+    "Google",
+    "Bing",
+    "DuckDuckGo"
+  ],
+  "search_results": [
+    {
+      "engine": "Google",
+      "keyword": "GEO marketing agency",
+      "domain_mentions": 0,
+      "site_mentions": 0,
+      "total_mentions": 0,
+      "found": false,
+      "html_size": 0
+    },
+    {
+      "engine": "Google",
+      "keyword": "Generative Engine Optimization",
+      "domain_mentions": 0,
+      "site_mentions": 0,
+      "total_mentions": 0,
+      "found": false,
+      "html_size": 0
+    },
+    {
+      "engine": "Google",
+      "keyword": "AI search marketing agency",
+      "domain_mentions": 0,
+      "site_mentions": 0,
+      "total_mentions": 0,
+      "found": false,
+      "html_size": 0
+    },
+    {
+      "engine": "Google",
+      "keyword": "GEO services pricing",
+      "domain_mentions": 0,
+      "site_mentions": 0,
+      "total_mentions": 0,
+      "found": false,
+      "html_size": 0
+    },
+    {
+      "engine": "Google",
+      "keyword": "AI-native marketing agency",
+      "domain_mentions": 0,
+      "site_mentions": 0,
+      "total_mentions": 0,
+      "found": false,
+      "html_size": 0
+    },
+    {
+      "engine": "Google",
+      "keyword": "GEO optimization company",
+      "domain_mentions": 0,
+      "site_mentions": 0,
+      "total_mentions": 0,
+      "found": false,
+      "html_size": 0
+    },
+    {
+      "engine": "Google",
+      "keyword": "AI search optimization service",
+      "domain_mentions": 0,
+      "site_mentions": 0,
+      "total_mentions": 0,
+      "found": false,
+      "html_size": 0
+    },
+    {
+      "engine": "Bing",
+      "keyword": "GEO marketing agency",
+      "domain_mentions": 26,
+      "site_mentions": 0,
+      "total_mentions": 26,
+      "found": true,
+      "html_size": 95214
+    },
+    {
+      "engine": "Bing",
+      "keyword": "Generative Engine Optimization",
+      "domain_mentions": 26,
+      "site_mentions": 0,
+      "total_mentions": 26,
+      "found": true,
+      "html_size": 97335
+    },
+    {
+      "engine": "Bing",
+      "keyword": "AI search marketing agency",
+      "domain_mentions": 27,
+      "site_mentions": 0,
+      "total_mentions": 27,
+      "found": true,
+      "html_size": 91290
+    },
+    {
+      "engine": "Bing",
+      "keyword": "GEO services pricing",
+      "domain_mentions": 26,
+      "site_mentions": 0,
+      "total_mentions": 26,
+      "found": true,
+      "html_size": 96167
+    },
+    {
+      "engine": "Bing",
+      "keyword": "AI-native marketing agency",
+      "domain_mentions": 27,
+      "site_mentions": 0,
+      "total_mentions": 27,
+      "found": true,
+      "html_size": 91697
+    },
+    {
+      "engine": "Bing",
+      "keyword": "GEO optimization company",
+      "domain_mentions": 26,
+      "site_mentions": 0,
+      "total_mentions": 26,
+      "found": true,
+      "html_size": 96428
+    },
+    {
+      "engine": "Bing",
+      "keyword": "AI search optimization service",
+      "domain_mentions": 27,
+      "site_mentions": 0,
+      "total_mentions": 27,
+      "found": true,
+      "html_size": 91420
+    }
+  ],
+  "schema_check": {},
+  "summary": {
+    "baseline_date": "2026-05-22",
+    "total_checks": 14,
+    "found_count": 7,
+    "visibility_score_pct": 50.0,
+    "keyword_visibility": {
+      "GEO marketing agency": {
+        "found": 1,
+        "total": 2,
+        "engines": [
+          "Bing"
+        ]
+      },
+      "Generative Engine Optimization": {
+        "found": 1,
+        "total": 2,
+        "engines": [
+          "Bing"
+        ]
+      },
+      "AI search marketing agency": {
+        "found": 1,
+        "total": 2,
+        "engines": [
+          "Bing"
+        ]
+      },
+      "GEO services pricing": {
+        "found": 1,
+        "total": 2,
+        "engines": [
+          "Bing"
+        ]
+      },
+      "AI-native marketing agency": {
+        "found": 1,
+        "total": 2,
+        "engines": [
+          "Bing"
+        ]
+      },
+      "GEO optimization company": {
+        "found": 1,
+        "total": 2,
+        "engines": [
+          "Bing"
+        ]
+      },
+      "AI search optimization service": {
+        "found": 1,
+        "total": 2,
+        "engines": [
+          "Bing"
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "MODERATE visibility. Strengthen content clusters, add more FAQ pages."
+  ]
+}
