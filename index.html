@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMM — AI-Native GEO Marketing, Engineered for Discovery</title>
+  <meta name="description" content="AMM delivers AI-native GEO (Generative Engine Optimization) marketing for global enterprises. Rank #1 in ChatGPT, Gemini, Perplexity, and more.">
+  <meta name="keywords" content="GEO marketing, generative engine optimization, AI search optimization, ChatGPT ranking, Perplexity ranking, AI visibility">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AMM — AI-Native GEO Marketing">
+  <meta property="og:description" content="Rank #1 across the AI search ecosystem. GEO marketing engineered for ChatGPT, Gemini, Perplexity, Claude, and Grok.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amm-geo.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AMM — AI-Native GEO Marketing">
+  <meta name="twitter:description" content="Rank #1 across the AI search ecosystem.">
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AMM",
+    "description": "AI-native Generative Engine Optimization (GEO) marketing agency for global enterprises.",
+    "url": "https://amm-geo.com",
+    "foundingDate": "2026",
+    "knowsAbout": ["Generative Engine Optimization", "AI Search Optimization", "GEO Marketing"],
+    "offers": {
+      "@type": "Service",
+      "name": "GEO Marketing Services",
+      "description": "Comprehensive GEO optimization for ChatGPT, Gemini, Perplexity, Claude, and Grok."
+    }
+  }
+  </script>
+
+  <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AMM",
+    "url": "https://amm-geo.com",
+    "description": "AI-native GEO marketing agency. Optimize your brand for the AI search era.",
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0a0a0b;
+      --surface: #141416;
+      --surface-hover: #1c1c20;
+      --border: #2a2a2e;
+      --text: #e8e8ed;
+      --text-muted: #8a8a92;
+      --accent: #6c5ce7;
+      --accent-glow: rgba(108, 92, 231, 0.15);
+      --green: #00d68f;
+      --amber: #ffa940;
+      --radius: 12px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Nav */
+    nav {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+    .logo span { color: var(--accent); }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    /* Hero */
+    .hero {
+      padding: 100px 0 60px;
+      text-align: center;
+    }
+    .hero-tag {
+      display: inline-block;
+      background: var(--accent-glow);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(108, 92, 231, 0.2);
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin-bottom: 20px;
+    }
+    .hero h1 .highlight {
+      background: linear-gradient(135deg, var(--accent), #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 10px 20px;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .hero-badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    /* CTA */
+    .cta-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: #7c6ff0;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px var(--accent-glow);
+    }
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: var(--surface-hover);
+      border-color: var(--text-muted);
+    }
+
+    /* Logos / Trust Bar */
+    .trust-bar {
+      padding: 40px 0;
+      text-align: center;
+    }
+    .trust-bar p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 24px;
+    }
+    .engine-grid {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .engine-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .engine-item .icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* Section */
+    .section {
+      padding: 80px 0;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .section-header h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+    .section-header p {
+      color: var(--text-muted);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* Services */
+    .service-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: all 0.2s;
+    }
+    .service-card:hover {
+      border-color: var(--accent);
+      background: var(--surface-hover);
+    }
+    .service-card .icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: var(--accent-glow);
+      border: 1px solid rgba(108, 92, 231, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+    }
+    .service-card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* How It Works */
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .step {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    .step-number {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--accent-glow);
+      border: 1px solid rgba(108, 92, 231, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--accent);
+    }
+    .step-content h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Why Section */
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .metric-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      text-align: center;
+    }
+    .metric-card .value {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 4px;
+    }
+    .metric-card .value.purple { color: var(--accent); }
+    .metric-card .value.green { color: var(--green); }
+    .metric-card .value.amber { color: var(--amber); }
+    .metric-card .label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 0;
+      text-align: center;
+    }
+    footer p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    footer .email {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2.2rem; }
+      .service-grid { grid-template-columns: 1fr; }
+      .metric-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="container">
+      <div class="logo">A<span>M</span>M</div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-tag">Generative Engine Optimization</div>
+      <h1>
+        Rank <span class="highlight">#1</span> in the<br>
+        AI Search Era
+      </h1>
+      <p>
+        AMM is the AI-native GEO agency built for global enterprises.
+        We optimize your brand for ChatGPT, Gemini, Perplexity, Claude, and Grok —
+        so you're found first, every time.
+      </p>
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Phase 0 — Baseline Measurement Active
+      </div>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary">Get Your GEO Baseline →</a>
+        <a href="#services" class="btn btn-secondary">How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container">
+      <p>Optimized for the AI search ecosystem</p>
+      <div class="engine-grid">
+        <div class="engine-item"><span class="icon">CG</span> ChatGPT</div>
+        <div class="engine-item"><span class="icon">GM</span> Gemini</div>
+        <div class="engine-item"><span class="icon">PX</span> Perplexity</div>
+        <div class="engine-item"><span class="icon">CD</span> Claude</div>
+        <div class="engine-item"><span class="icon">GK</span> Grok</div>
+        <div class="engine-item"><span class="icon">DS</span> DeepSeek</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Full-Stack GEO Services</h2>
+        <p>From content strategy to technical optimization — everything you need to dominate AI search results.</p>
+      </div>
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="icon-wrap">📊</div>
+          <h3>AI Search Audit</h3>
+          <p>Comprehensive baseline measurement across 6 major AI engines. We identify exactly where you stand and what it takes to reach #1.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-wrap">📝</div>
+          <h3>GEO Content Strategy</h3>
+          <p>Content engineered for AI retrieval — structured data, authoritative sourcing, and multi-modal optimization that AI engines trust.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-wrap">🔧</div>
+          <h3>Technical GEO</h3>
+          <p>Schema.org markup, knowledge graph integration, API-first content architecture, and cite-worthy citation structures.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-wrap">📈</div>
+          <h3>Continuous Optimization</h3>
+          <p>Weekly rank tracking, automated content refresh, and adaptive strategy based on AI engine algorithm changes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>A proven process to establish and grow your AI search presence.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>GEO Baseline Audit</h3>
+            <p>We measure your current visibility across ChatGPT, Gemini, Perplexity, Claude, and Grok — across your key industry terms.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Strategy & Content Blueprint</h3>
+            <p>We design a content and technical optimization plan tailored to your brand's unique positioning and target AI engines.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Implementation & Optimization</h3>
+            <p>Our AI agents produce GEO-optimized content, deploy structured data, and continuously monitor ranking movements.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Reporting & Iteration</h3>
+            <p>Weekly rank reports, monthly strategy reviews, and adaptive optimization as AI engine algorithms evolve.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why AMM -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Built Different. Built AI-Native.</h2>
+        <p>AMM is not a traditional SEO agency retrofit for AI. We are an AI-native operation from day one.</p>
+      </div>
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="value purple">99%</div>
+          <div class="label">Operational Efficiency<br>(AI-native cost structure)</div>
+        </div>
+        <div class="metric-card">
+          <div class="value green">6</div>
+          <div class="label">AI Engines<br>Monitored & Optimized</div>
+        </div>
+        <div class="metric-card">
+          <div class="value amber">24/7</div>
+          <div class="label">Autonomous Agents<br>Continuous Optimization</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container" style="text-align:center;">
+      <div class="section-header">
+        <h2>Ready for Your GEO Baseline?</h2>
+        <p>Phase 0 is active. Get your free AI search visibility audit — no commitment required.</p>
+      </div>
+      <div class="cta-row">
+        <a href="mailto:hello@amm-geo.com" class="btn btn-primary">hello@amm-geo.com →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 AMM — AI-Native GEO Marketing. All rights reserved.</p>
+      <p style="margin-top:8px; font-size:0.8rem;">
+        Built by autonomous AI agents. Operated 24/7.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

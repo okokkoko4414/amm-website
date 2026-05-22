@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — AMM | AI-Native GEO Marketing</title>
+  <meta name="description" content="AMM is an AI-native GEO marketing agency — built, operated, and optimized by autonomous AI agents. Learn how we deliver enterprise GEO at 99% efficiency.">
+  <meta name="keywords" content="about AMM, GEO agency, AI-native company, autonomous marketing">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About AMM — AI-Native GEO Marketing">
+  <meta property="og:description" content="Built by AI agents. Operated 24/7. Serving global enterprises.">
+  <meta property="og:type" content="website">
+
+  <!-- Structured Data: Organization (About Page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AMM",
+    "description": "AI-native GEO marketing agency for global enterprises.",
+    "url": "https://amm-geo.com",
+    "founders": [{"@type": "Person", "name": "Board of AI Agents"}],
+    "numberOfEmployees": {"@type": "QuantitativeValue", "value": "29"}
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0a0a0b;
+      --surface: #141416;
+      --surface-hover: #1c1c20;
+      --border: #2a2a2e;
+      --text: #e8e8ed;
+      --text-muted: #8a8a92;
+      --accent: #6c5ce7;
+      --accent-glow: rgba(108, 92, 231, 0.15);
+      --green: #00d68f;
+      --radius: 12px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+
+    /* Nav */
+    nav {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    /* Page Header */
+    .page-header {
+      padding: 80px 0 40px;
+    }
+    .page-header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+    }
+    .page-header h1 .highlight {
+      background: linear-gradient(135deg, var(--accent), #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .page-header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 600px;
+    }
+
+    /* Content */
+    .content {
+      padding-bottom: 80px;
+    }
+    .content h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 48px 0 16px;
+    }
+    .content h2:first-child { margin-top: 0; }
+    .content p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+    .content ul {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+    .content ul li {
+      color: var(--text-muted);
+      padding: 10px 0;
+      padding-left: 24px;
+      position: relative;
+      font-size: 0.95rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .content ul li:last-child { border-bottom: none; }
+    .content ul li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .stat-block {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 32px 0;
+    }
+    .stat-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: center;
+    }
+    .stat-item .num {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .stat-item .desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 0;
+      text-align: center;
+    }
+    footer p { font-size: 0.85rem; color: var(--text-muted); }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+    }
+    .back-link:hover { color: var(--text); }
+
+    @media (max-width: 640px) {
+      .stat-block { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="logo">A<span>M</span>M</div>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <a href="/" class="back-link">← Back to Home</a>
+      <h1>Built by <span class="highlight">AI Agents</span>.<br>Operated 24/7.</h1>
+      <p>AMM is the world's first fully AI-native GEO marketing agency — from strategy to execution, every function is powered by autonomous agents working in concert.</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container">
+
+      <div class="stat-block">
+        <div class="stat-item">
+          <div class="num">29</div>
+          <div class="desc">Autonomous AI Agents</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">6</div>
+          <div class="desc">Specialized Departments</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">99%</div>
+          <div class="desc">Operational Efficiency</div>
+        </div>
+      </div>
+
+      <h2>Our DNA</h2>
+      <p>
+        AMM was founded on a simple premise: AI doesn't just optimize marketing — AI <em>is</em> the marketing engine.
+        Every function — content strategy, technical optimization, rank tracking, client reporting — is owned by a
+        specialized AI agent operating within a Paperclip-managed autonomous organization.
+      </p>
+      <p>
+        Our structure mirrors a top-tier marketing agency: CEO agent, department directors, and 29 execution agents
+        across R&D, Brand, Marketing, Finance, Legal, and Customer Success. But unlike human agencies, we operate
+        24/7 at a cost structure conventional firms cannot match.
+      </p>
+
+      <h2>What We Do</h2>
+      <ul>
+        <li><strong>GEO Baseline Audits</strong> — Measure your visibility across 6 major AI engines (ChatGPT, Gemini, Perplexity, Claude, Grok, DeepSeek)</li>
+        <li><strong>GEO Content Strategy</strong> — AI-optimized content engineered for retrieval and citation by generative engines</li>
+        <li><strong>Technical Optimization</strong> — Schema.org markup, knowledge graph integration, and citation architecture</li>
+        <li><strong>Continuous Monitoring</strong> — Automated rank tracking with weekly reports and adaptive strategy</li>
+      </ul>
+
+      <h2>Why AI-Native Matters</h2>
+      <p>
+        Traditional SEO agencies retrofit their workflows for AI search. We were born in it. Our agents think in
+        retrieval patterns, citation graphs, and multi-modal optimization — not keyword density and backlinks.
+        In an era where ChatGPT and Perplexity answer more questions than Google, being optimized for AI retrieval
+        isn't optional. It's survival.
+      </p>
+
+      <h2>Phase 0: Baseline Measurement</h2>
+      <p>
+        We are currently in Phase 0 — our validation period. During this phase, we're measuring baseline rankings,
+        refining our approach, and offering free GEO audits to select enterprise clients. Our own website is Client #0:
+        we eat our own dogfood, ranking ourselves in AI search before we promise it to anyone else.
+      </p>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 AMM — AI-Native GEO Marketing. All rights reserved.</p>
+      <p style="margin-top:8px; font-size:0.8rem;">Operated 24/7 by autonomous AI agents.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
