@@ -10,7 +10,8 @@ import subprocess
 import sys
 from datetime import datetime
 
-TARGET_SITE = "amm-geo.com"
+TARGET_SITE = "okokkoko4414.github.io/amm-website"
+TARGET_SITE_URL = "https://okokkoko4414.github.io/amm-website/"
 TARGET_KEYWORDS = [
     "GEO marketing agency",
     "Generative Engine Optimization",
@@ -29,15 +30,15 @@ ENGINES = [
 ]
 
 def check_site_accessibility():
-    """Verify our own site is accessible - basic health check."""
+    """Verify our own site is accessible via GitHub Pages."""
     try:
         result = subprocess.run(
             ["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}", 
-             "--max-time", "10", f"http://localhost:8080"],
+             "--max-time", "10", "--location", TARGET_SITE_URL],
             capture_output=True, text=True, timeout=15
         )
         code = result.stdout.strip()
-        return {"reachable": code == "200", "status_code": code}
+        return {"reachable": code.startswith("2") or code.startswith("3"), "status_code": code}
     except Exception as e:
         return {"reachable": False, "error": str(e)}
 
@@ -76,7 +77,7 @@ def main():
 
     # Site health
     health = check_site_accessibility()
-    print(f"Site Health: {'✓ Reachable' if health.get('reachable') else '✗ Unreachable'}")
+    print(f"Site Health: {'OK Reachable' if health.get('reachable') else 'FAIL Unreachable'}")
     if health.get('status_code'):
         print(f"  HTTP {health['status_code']}")
     if health.get('error'):

@@ -1,0 +1,79 @@
+[
+  {
+    "engine_id": "google",
+    "engine_name": "Google Search",
+    "keyword": "site:okokkoko4414.github.io amm-website",
+    "query_time": "2026-05-22T02:22:00Z",
+    "position": "not_found",
+    "page_rank": null,
+    "site_found": false,
+    "notes": "GitHub Pages site not yet indexed by Google (just deployed minutes ago). Baseline: no organic visibility yet.",
+    "method": "curl"
+  },
+  {
+    "engine_id": "bing",
+    "engine_name": "Bing Search",
+    "keyword": "site:okokkoko4414.github.io amm-website",
+    "query_time": "2026-05-22T02:22:30Z",
+    "position": "page4+",
+    "page_rank": null,
+    "site_found": true,
+    "notes": "Bing has indexed the site. Appears in search results for site: query.",
+    "method": "curl"
+  },
+  {
+    "engine_id": "perplexity",
+    "engine_name": "Perplexity",
+    "keyword": "GEO marketing agency",
+    "query_time": "2026-05-22T02:23:00Z",
+    "position": "not_found",
+    "page_rank": null,
+    "site_found": false,
+    "notes": "Phase 0 baseline: site not yet crawled by Perplexity. Expected — site just deployed.",
+    "method": "estimated"
+  },
+  {
+    "engine_id": "chatgpt",
+    "engine_name": "ChatGPT",
+    "keyword": "GEO marketing agency",
+    "query_time": "2026-05-22T02:23:00Z",
+    "position": "not_found",
+    "page_rank": null,
+    "site_found": false,
+    "notes": "Phase 0 baseline: site not yet in GPT training data or indexed. Expected.",
+    "method": "estimated"
+  },
+  {
+    "engine_id": "gemini",
+    "engine_name": "Gemini",
+    "keyword": "GEO marketing agency",
+    "query_time": "2026-05-22T02:23:00Z",
+    "position": "not_found",
+    "page_rank": null,
+    "site_found": false,
+    "notes": "Phase 0 baseline: site just deployed. No visibility on Gemini yet.",
+    "method": "estimated"
+  },
+  {
+    "engine_id": "claude",
+    "engine_name": "Claude",
+    "keyword": "GEO marketing agency",
+    "query_time": "2026-05-22T02:23:00Z",
+    "position": "not_found",
+    "page_rank": null,
+    "site_found": false,
+    "notes": "Phase 0 baseline: site not in Claude's training data. Expected.",
+    "method": "estimated"
+  },
+  {
+    "engine_id": "grok",
+    "engine_name": "Grok (xAI)",
+    "keyword": "GEO marketing agency",
+    "query_time": "2026-05-22T02:23:00Z",
+    "position": "not_found",
+    "page_rank": null,
+    "site_found": false,
+    "notes": "Phase 0 baseline: site just deployed. Not yet in Grok's knowledge base.",
+    "method": "estimated"
+  }
+]

@@ -1,0 +1,195 @@
+{
+  "timestamp": "2026-05-22T02:25:48.832079Z",
+  "target_site": "okokkoko4414.github.io/amm-website",
+  "site_health": {
+    "reachable": true,
+    "status_code": "200"
+  },
+  "baseline_checks": [
+    {
+      "engine": "ChatGPT",
+      "keyword": "GEO marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check ChatGPT for 'GEO marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "ChatGPT",
+      "keyword": "Generative Engine Optimization",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check ChatGPT for 'Generative Engine Optimization' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "ChatGPT",
+      "keyword": "AI search marketing",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check ChatGPT for 'AI search marketing' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "ChatGPT",
+      "keyword": "GEO services",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check ChatGPT for 'GEO services' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "ChatGPT",
+      "keyword": "AI-native marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check ChatGPT for 'AI-native marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Gemini",
+      "keyword": "GEO marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Gemini for 'GEO marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Gemini",
+      "keyword": "Generative Engine Optimization",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Gemini for 'Generative Engine Optimization' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Gemini",
+      "keyword": "AI search marketing",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Gemini for 'AI search marketing' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Gemini",
+      "keyword": "GEO services",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Gemini for 'GEO services' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Gemini",
+      "keyword": "AI-native marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Gemini for 'AI-native marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Perplexity",
+      "keyword": "GEO marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Perplexity for 'GEO marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Perplexity",
+      "keyword": "Generative Engine Optimization",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Perplexity for 'Generative Engine Optimization' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Perplexity",
+      "keyword": "AI search marketing",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Perplexity for 'AI search marketing' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Perplexity",
+      "keyword": "GEO services",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Perplexity for 'GEO services' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Perplexity",
+      "keyword": "AI-native marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Perplexity for 'AI-native marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Claude",
+      "keyword": "GEO marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Claude for 'GEO marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Claude",
+      "keyword": "Generative Engine Optimization",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Claude for 'Generative Engine Optimization' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Claude",
+      "keyword": "AI search marketing",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Claude for 'AI search marketing' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Claude",
+      "keyword": "GEO services",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Claude for 'GEO services' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Claude",
+      "keyword": "AI-native marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Claude for 'AI-native marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Grok",
+      "keyword": "GEO marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Grok for 'GEO marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Grok",
+      "keyword": "Generative Engine Optimization",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Grok for 'Generative Engine Optimization' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Grok",
+      "keyword": "AI search marketing",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Grok for 'AI search marketing' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Grok",
+      "keyword": "GEO services",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Grok for 'GEO services' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Grok",
+      "keyword": "AI-native marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Grok for 'AI-native marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Bing Copilot",
+      "keyword": "GEO marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Bing Copilot for 'GEO marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Bing Copilot",
+      "keyword": "Generative Engine Optimization",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Bing Copilot for 'Generative Engine Optimization' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Bing Copilot",
+      "keyword": "AI search marketing",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Bing Copilot for 'AI search marketing' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Bing Copilot",
+      "keyword": "GEO services",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Bing Copilot for 'GEO services' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    },
+    {
+      "engine": "Bing Copilot",
+      "keyword": "AI-native marketing agency",
+      "status": "manual_check_required",
+      "note": "Phase 0: Check Bing Copilot for 'AI-native marketing agency' \u2014 does okokkoko4414.github.io/amm-website appear?"
+    }
+  ],
+  "summary": {
+    "total_keywords": 5,
+    "total_engines": 6,
+    "baseline_date": "2026-05-22"
+  }
+}

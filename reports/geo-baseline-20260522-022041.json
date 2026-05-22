@@ -1,0 +1,50 @@
+{
+  "report_type": "geo_baseline",
+  "phase": "Phase 0",
+  "company": "AMM \u2014 Advanced Model Marketing",
+  "timestamp": "2026-05-22T02:20:41.925980+00:00",
+  "target": {
+    "site": "okokkoko4414.github.io/amm-website",
+    "domain": "okokkoko4414.github.io",
+    "url": "https://okokkoko4414.github.io/amm-website/",
+    "deployment": "GitHub Pages (gh-pages branch)"
+  },
+  "site_health": {
+    "url": "https://okokkoko4414.github.io/amm-website/",
+    "checks": {
+      "http": {
+        "status_code": "200",
+        "time_seconds": 1.184348,
+        "size_bytes": 16568,
+        "reachable": true
+      },
+      "about_page": true,
+      "google_fonts": true
+    },
+    "healthy": true
+  },
+  "keywords_tracked": [
+    "GEO marketing agency",
+    "Generative Engine Optimization",
+    "AI search optimization agency",
+    "GEO services",
+    "AI-native marketing agency"
+  ],
+  "engines_tracked": [
+    "chatgpt",
+    "gemini",
+    "perplexity",
+    "claude",
+    "grok",
+    "bing"
+  ],
+  "manual_results": [],
+  "summary": {
+    "baseline_date": "2026-05-22",
+    "site_healthy": true,
+    "engines_count": 6,
+    "keywords_count": 5,
+    "total_checks_manual": 0,
+    "engines_found_count": 0
+  }
+}
