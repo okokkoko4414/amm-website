@@ -1,0 +1,8 @@
+# AMM Website — robots.txt
+# Allow all crawlers to index the full site for GEO/SEO
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://okokkoko4414.github.io/amm-website/sitemap.xml

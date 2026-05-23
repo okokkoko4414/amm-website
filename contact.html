@@ -37,7 +37,11 @@
   </script>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Analytics (Plausible — privacy-friendly, recommended) -->
+  <!-- To activate: replace YOUR-DOMAIN with your Plausible shared link -->
+  <!-- <script defer data-domain="amm.company" src="https://plausible.io/js/script.js"></script> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -230,9 +234,17 @@
       <div class="contact-grid">
 
         <!-- Form (uses Formspree) -->
-        <div class="form-section">
+          <div class="form-section">
           <h2>Request Your Free Audit</h2>
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <!-- Form (uses FormSubmit.co — submissions forwarded to hello@amm.company) -->
+          <form action="https://formsubmit.co/hello@amm.company" method="POST">
+            <!-- Honeypot (anti-spam) -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- Disable captcha for speed -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Redirect back after submit -->
+            <input type="hidden" name="_next" value="https://okokkoko4414.github.io/amm-website/contact.html?submitted=1">
+            <input type="hidden" name="_subject" value="New GEO Audit Request from AMM Website">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your full name" required>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!-- AMM Free GEO Scanner — Phase 0 Lead Generation Tool -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free GEO Audit Tool — AMM | AI Search Visibility Scanner</title>
+  <meta name="description" content="Free GEO baseline scanner. Check your website's visibility on ChatGPT, Gemini, Perplexity, Claude, Grok, and Bing Copilot in 24 hours. No commitment." />
+  <link rel="canonical" href="https://okokkoko4414.github.io/amm-website/tools/geo-scanner.html" />
+
+  <meta property="og:title" content="Free GEO Visibility Scanner — AMM" />
+  <meta property="og:description" content="Check your brand's AI search visibility across 6 engines. Free report delivered via email within 24 hours." />
+  <meta property="og:url" content="https://okokkoko4414.github.io/amm-website/tools/geo-scanner.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Analytics (Plausible — privacy-friendly, recommended) -->
+  <!-- To activate: replace YOUR-DOMAIN below with your Plausible shared link -->
+  <!-- <script defer data-domain="amm.company" src="https://plausible.io/js/script.js"></script> -->
+
+  <!-- Schema: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AMM Free GEO Scanner",
+    "operatingSystem": "Web",
+    "applicationCategory": "MarketingApplication",
+    "description": "Free AI search visibility scanner. Checks your brand presence across ChatGPT, Gemini, Perplexity, Claude, Grok, and Bing Copilot.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0b;
+      color: #e8e8ed;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+    nav {
+      background: #0A1F44;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav .logo { color: #fff; font-size: 22px; font-weight: 700; text-decoration: none; }
+    nav .logo span { color: #6c5ce7; }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #fff; }
+
+    .hero {
+      text-align: center;
+      padding: 80px 0 60px;
+      background: radial-gradient(ellipse at top, rgba(108,92,231,0.08) 0%, transparent 70%);
+    }
+    .hero h1 { font-size: 2.6rem; font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+    .hero h1 span { color: #6c5ce7; }
+    .hero p { color: #8a8a92; max-width: 600px; margin: 0 auto; font-size: 1.1rem; }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(108,92,231,0.15);
+      color: #6c5ce7;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .scanner-card {
+      background: #141416;
+      border: 1px solid #2a2a2e;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 600px;
+      margin: 0 auto 60px;
+    }
+    .scanner-card h2 { font-size: 1.3rem; margin-bottom: 24px; font-weight: 600; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #8a8a92;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      background: #1c1c20;
+      border: 1px solid #2a2a2e;
+      border-radius: 8px;
+      color: #e8e8ed;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: #6c5ce7;
+    }
+    .form-group input::placeholder { color: #5a5a62; }
+    .btn {
+      width: 100%;
+      padding: 14px;
+      background: #6c5ce7;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #7c6ef7; }
+    .btn:disabled {
+      background: #3a3a42;
+      cursor: not-allowed;
+    }
+    .btn-loading {
+      position: relative;
+      color: transparent;
+    }
+    .btn-loading::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      margin: -10px 0 0 -10px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .form-note {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 0.8rem;
+      color: #5a5a62;
+    }
+    .form-note a { color: #6c5ce7; }
+
+    .success-message {
+      display: none;
+      text-align: center;
+      padding: 40px;
+    }
+    .success-message .check { font-size: 3rem; color: #00d68f; margin-bottom: 16px; }
+    .success-message h3 { font-size: 1.4rem; margin-bottom: 8px; }
+    .success-message p { color: #8a8a92; }
+
+    .engine-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+    .engine-card {
+      text-align: center;
+      padding: 16px 8px;
+      background: #1c1c20;
+      border: 1px solid #2a2a2e;
+      border-radius: 10px;
+    }
+    .engine-card .icon { font-size: 1.6rem; margin-bottom: 6px; }
+    .engine-card .name { font-size: 0.78rem; color: #8a8a92; font-weight: 500; }
+
+    .what-you-get {
+      padding: 60px 0;
+      border-top: 1px solid #2a2a2e;
+    }
+    .what-you-get h2 { text-align: center; font-size: 1.6rem; margin-bottom: 40px; }
+    .benefits { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .benefit-item {
+      padding: 24px;
+      background: #141416;
+      border: 1px solid #2a2a2e;
+      border-radius: 12px;
+    }
+    .benefit-item .num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #6c5ce7;
+      margin-bottom: 8px;
+    }
+    .benefit-item h4 { font-size: 1rem; margin-bottom: 6px; }
+    .benefit-item p { color: #8a8a92; font-size: 0.88rem; }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      border-top: 1px solid #2a2a2e;
+      color: #5a5a62;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.8rem; }
+      .scanner-card { padding: 24px; }
+      .engine-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="../" class="logo">A<span>M</span>M</a>
+      <div class="nav-links">
+        <a href="../">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../service-groups.html">Services</a>
+        <a href="../pricing.html">Pricing</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="badge">Free — No Credit Card</div>
+      <h1>Free <span>AI Search Visibility</span> Scanner</h1>
+      <p>Enter your website URL and we'll check your presence across 6 AI engines. You'll receive a detailed baseline report within 24 hours.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="scanner-card">
+      <!-- Engine badges -->
+      <div class="engine-grid">
+        <div class="engine-card"><div class="icon">🔮</div><div class="name">ChatGPT</div></div>
+        <div class="engine-card"><div class="icon">🔵</div><div class="name">Gemini</div></div>
+        <div class="engine-card"><div class="icon">🟣</div><div class="name">Perplexity</div></div>
+        <div class="engine-card"><div class="icon">🟠</div><div class="name">Claude</div></div>
+        <div class="engine-card"><div class="icon">🟢</div><div class="name">Grok</div></div>
+        <div class="engine-card"><div class="icon">🟦</div><div class="name">Bing Copilot</div></div>
+      </div>
+
+      <!-- Form -->
+      <div id="form-container">
+        <form id="scanner-form" action="https://formsubmit.co/hello@amm.company" method="POST">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://okokkoko4414.github.io/amm-website/tools/geo-scanner.html?submitted=1">
+          <input type="hidden" name="_subject" value="Free GEO Scanner Request from AMM Website">
+          <input type="hidden" name="source" value="free-geo-scanner-tool">
+
+          <div class="form-group">
+            <label for="website">Your Website URL</label>
+            <input type="url" id="website" name="website" placeholder="https://yourcompany.com" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email (for report delivery)</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Your company name">
+          </div>
+          <div class="form-group">
+            <label for="keywords">Target Keywords (optional)</label>
+            <textarea id="keywords" name="keywords" placeholder="e.g. GEO marketing, AI search optimization, generative engine optimization" rows="2"></textarea>
+          </div>
+          <button type="submit" class="btn" id="submit-btn">Scan My Site — Get Free Report</button>
+          <p class="form-note">No spam. No follow-up pressure. Your free baseline report is delivered within 24 hours.</p>
+        </form>
+      </div>
+
+      <!-- Success state -->
+      <div class="success-message" id="success-message">
+        <div class="check">✓</div>
+        <h3>Report Request Received!</h3>
+        <p>Our AI agent will scan your site across 6 AI engines. You'll receive your baseline visibility report at the email you provided within 24 hours.</p>
+        <p style="margin-top: 16px; color: #8a8a92; font-size: 0.9rem;">Meanwhile, explore our <a href="../blog/" style="color: #6c5ce7;">GEO knowledge base</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- What you get section -->
+  <section class="what-you-get">
+    <div class="container">
+      <h2>Your Free Report Includes</h2>
+      <div class="benefits">
+        <div class="benefit-item">
+          <div class="num">06</div>
+          <h4>AI Engine Rankings</h4>
+          <p>Your current visibility score on ChatGPT, Gemini, Perplexity, Claude, Grok, and Bing Copilot.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="num">85</div>
+          <h4>Structured Data Score</h4>
+          <p>How well your site's schema markup is optimized for AI search engines to extract and cite.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="num">10</div>
+          <h4>Actionable Improvements</h4>
+          <p>Prioritized list of changes to boost your AI search rankings — from technical to content.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="num">5</div>
+          <h4>Competitor Comparison</h4>
+          <p>See how your AI search visibility stacks up against top competitors in your space.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="num">1</div>
+          <h4>Baseline Score</h4>
+          <p>A single metric you can track over time to measure your GEO improvement progress.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="num">24h</div>
+          <h4>Fast Turnaround</h4>
+          <p>Delivered within 24 hours of submission. No sales call required — the data speaks for itself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 AMM — AI-Native GEO Marketing. All rights reserved.</p>
+      <p style="margin-top:8px; font-size:0.8rem;">Operated 24/7 by autonomous AI agents.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Handle form submission — show success message
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('submitted') === '1') {
+      document.getElementById('form-container').style.display = 'none';
+      document.getElementById('success-message').style.display = 'block';
+    }
+
+    // Loading state on submit
+    document.getElementById('scanner-form')?.addEventListener('submit', function() {
+      document.getElementById('submit-btn').classList.add('btn-loading');
+      document.getElementById('submit-btn').disabled = true;
+    });
+  </script>
+
+</body>
+</html>
