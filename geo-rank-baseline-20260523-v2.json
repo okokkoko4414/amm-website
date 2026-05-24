@@ -1,0 +1,171 @@
+{
+  "timestamp": "2026-05-23T18:03:54.464439+00:00",
+  "target_site": "okokkoko4414.github.io/amm-website",
+  "target_url": "https://okokkoko4414.github.io/amm-website/",
+  "site_health": {
+    "reachable": true,
+    "status_code": "200"
+  },
+  "keywords_tracked": [
+    "GEO marketing agency",
+    "Generative Engine Optimization",
+    "AI search marketing agency",
+    "GEO services pricing"
+  ],
+  "engines": [
+    "Bing",
+    "DuckDuckGo"
+  ],
+  "search_results": [
+    {
+      "engine": "Bing",
+      "keyword": "GEO marketing agency",
+      "domain_mentions": 26,
+      "site_mentions": 0,
+      "total_mentions": 26,
+      "result_count": 0,
+      "found": true,
+      "html_size": 96909
+    },
+    {
+      "engine": "Bing",
+      "keyword": "Generative Engine Optimization",
+      "domain_mentions": 26,
+      "site_mentions": 0,
+      "total_mentions": 26,
+      "result_count": 0,
+      "found": true,
+      "html_size": 97199
+    },
+    {
+      "engine": "Bing",
+      "keyword": "AI search marketing agency",
+      "domain_mentions": 26,
+      "site_mentions": 0,
+      "total_mentions": 26,
+      "result_count": 0,
+      "found": true,
+      "html_size": 97562
+    },
+    {
+      "engine": "Bing",
+      "keyword": "GEO services pricing",
+      "domain_mentions": 26,
+      "site_mentions": 0,
+      "total_mentions": 26,
+      "result_count": 0,
+      "found": true,
+      "html_size": 97941
+    },
+    {
+      "engine": "DuckDuckGo",
+      "keyword": "GEO marketing agency",
+      "domain_mentions": 0,
+      "site_mentions": 0,
+      "total_mentions": 0,
+      "result_count": 0,
+      "found": false,
+      "html_size": 0
+    },
+    {
+      "engine": "DuckDuckGo",
+      "keyword": "Generative Engine Optimization",
+      "domain_mentions": 0,
+      "site_mentions": 0,
+      "total_mentions": 0,
+      "result_count": 0,
+      "found": false,
+      "html_size": 0
+    },
+    {
+      "engine": "DuckDuckGo",
+      "keyword": "AI search marketing agency",
+      "domain_mentions": 0,
+      "site_mentions": 0,
+      "total_mentions": 0,
+      "result_count": 0,
+      "found": false,
+      "html_size": 0
+    },
+    {
+      "engine": "DuckDuckGo",
+      "keyword": "GEO services pricing",
+      "domain_mentions": 0,
+      "site_mentions": 0,
+      "total_mentions": 0,
+      "result_count": 0,
+      "found": false,
+      "html_size": 0
+    }
+  ],
+  "schema_check": {
+    "Home": {
+      "reachable": true,
+      "has_structured_data": true,
+      "has_jsonld": true,
+      "has_schema_dot_org": true,
+      "html_size": 19312
+    },
+    "FAQ": {
+      "reachable": true,
+      "has_structured_data": true,
+      "has_jsonld": true,
+      "has_schema_dot_org": true,
+      "html_size": 18065
+    },
+    "Services": {
+      "reachable": true,
+      "has_structured_data": false,
+      "has_jsonld": false,
+      "has_schema_dot_org": false,
+      "html_size": 9379
+    },
+    "Pricing": {
+      "reachable": true,
+      "has_structured_data": true,
+      "has_jsonld": true,
+      "has_schema_dot_org": true,
+      "html_size": 11955
+    }
+  },
+  "summary": {
+    "baseline_date": "2026-05-23",
+    "total_checks": 8,
+    "found_count": 4,
+    "visibility_score_pct": 50.0,
+    "keyword_visibility": {
+      "GEO marketing agency": {
+        "found": 1,
+        "total": 2,
+        "engines": [
+          "Bing"
+        ]
+      },
+      "Generative Engine Optimization": {
+        "found": 1,
+        "total": 2,
+        "engines": [
+          "Bing"
+        ]
+      },
+      "AI search marketing agency": {
+        "found": 1,
+        "total": 2,
+        "engines": [
+          "Bing"
+        ]
+      },
+      "GEO services pricing": {
+        "found": 1,
+        "total": 2,
+        "engines": [
+          "Bing"
+        ]
+      }
+    }
+  },
+  "recommendations": [
+    "MODERATE visibility. Strengthen content clusters and add more FAQ Schema pages.",
+    "Schema.org missing on: Services. Add JSON-LD structured data."
+  ]
+}
